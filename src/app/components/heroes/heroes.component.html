@@ -2,7 +2,7 @@
 <hr />
 <div>
     <div class="card-columns">
-        <div class="card" *ngFor="let heroe of heroes">
+        <div class="card fadeIn fast" *ngFor="let heroe of heroes">
             <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre" />
             <div class="card-body">
                 <h5 class="card-title">{{ heroe.nombre }}</h5>
@@ -10,9 +10,10 @@
                 <p class="card-text">
                     <small class="text-muted">{{ heroe.aparicion }}</small>
                 </p>
-                <button type="button" class="btn btn-outline-primary btn-block">
+                <!-- <button type="button" class="btn btn-outline-primary btn-block">
           Ver más...
-        </button>
+        </button> -->
+                <a href="#" class="btn btn-outline-dark btn-block">Ver más link...</a>
             </div>
         </div>
     </div>
