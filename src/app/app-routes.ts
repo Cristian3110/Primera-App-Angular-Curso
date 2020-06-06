@@ -9,7 +9,7 @@ const APP_ROUTES: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'heroes', component: HeroesComponent },
   // para recibir un parámetro, ese será el ID del heroe que yo quiero mostrar, ese será el código cuando pase el código por el url
-  { path: 'heroe/:id', component: HeroeComponent },
+  { path: 'heroe/:id:number', component: HeroeComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
