@@ -39,3 +39,7 @@ En el caso de querer una animación de 0.4S escribiremos animated fast fadeIn, s
 .fadeIn {
     animation-name: fadeIn;
 }
+
+.img-logo {
+    width: 200px;
+}
