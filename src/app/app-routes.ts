@@ -3,6 +3,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscarComponent } from './components/buscar/buscar.component';
 
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
@@ -10,6 +11,7 @@ const APP_ROUTES: Routes = [
   { path: 'heroes', component: HeroesComponent },
   // para recibir un parámetro, ese será el ID del heroe que yo quiero mostrar, ese será el código cuando pase el código por el url
   { path: 'heroe/:id:number', component: HeroeComponent },
+  { path: 'buscar/:termino', component: BuscarComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
